@@ -1,0 +1,12 @@
+{
+  "name": "umami-moco",
+  "version": "0.0.1",
+   "author": "Mike Chastain <michaelwchastain@gmail.com>",
+  "description": "motion control camera slider and gimbal",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.3.7",
+    "johnny-five": "^0.9.11",
+    "rekapi": "^1.6.1"
+  }
+}

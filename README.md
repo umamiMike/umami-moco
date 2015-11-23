@@ -1,26 +1,25 @@
 ## Umami Media motion control experiments
 
+
+## Install
+  Not alot to do here yet other than cloning into a folder and
+  ```
+npm-install ```
+  To get the libraries.
 ### To Do
 
 ### hardware
+[teensy 3.1 ](https://www.pjrc.com/store/teensy31.html)  
+stepper driver - schmalzhaus easydriver atm
+stepper motor
+Raspberry Pi
 
-* get panel mount audio jack OR
-* fab a holder
-* fix the adafruit motor shield that made the blue smoke.
+### Software  
+* [Raspberry Pi Raspibian "Jessie"](https://www.raspberrypi.org/downloads/raspbian/)  
+  * Originally Had Weezy but node wouldnt run unless I upgraded
 
-* I am pretty sure some of our codebase will be taken from dynamic perceptions mx2 dollyshield library.  Dont really know yet.
-
-* find a good panel connector for the stepper motor.
-* find a decent stepper driver
-* find a decents servo driver for 6 servo's
-
-
-
-## software
-
-* figure out what software
-
-
+* Node.js
+* johnny-five
 
 
 s
