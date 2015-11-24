@@ -21,11 +21,11 @@ function handler (req, res) {
 board = new five.Board();
 
 board.on("ready", function() {
-  led = new five.Led(13);
+  led = new five.Led(11);
 
   io.sockets.on('connection', function (socket) {
     socket.on('click', function () {
       led.toggle();
     });
-  }); 
+  });
 });
