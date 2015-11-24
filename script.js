@@ -21,7 +21,7 @@ function handler (req, res) {
 board = new five.Board();
 
 board.on("ready", function() {
-  led = new five.Led(11);
+  led = new five.Led(13);
 
   io.sockets.on('connection', function (socket) {
     socket.on('click', function () {
