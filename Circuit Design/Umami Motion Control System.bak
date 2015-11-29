@@ -214,7 +214,7 @@ Wire Wire Line
 $Sheet
 S 1250 1100 900  550 
 U 5651023A
-F0 "Sheet56510239" 60
-F1 "file56510239.sch" 60
+F0 "Raspi" 60
+F1 "Raspi.sch" 60
 $EndSheet
 $EndSCHEMATC

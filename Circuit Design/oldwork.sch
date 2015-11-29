@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -47,15 +47,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L PBD-26 J?
-U 1 1 5651038C
-P 5700 3750
-F 0 "J?" H 5700 4450 60  0000 C CNN
-F 1 "PBD-26" V 5700 3750 50  0000 C CNN
-F 2 "" H 5700 3750 60  0000 C CNN
-F 3 "" H 5700 3750 60  0000 C CNN
-	1    5700 3750
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
