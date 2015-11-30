@@ -2,17 +2,28 @@
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
+    <script src="/chance/chance.js"></script>
   <script>
     $(document).ready(function() {
-      var socket = io.connect('http://10.0.0.199:8090');
+        var socket = io.connect('http://10.0.0.199:8090');
       $('#button').click(function(e){
         socket.emit('click');
+        console.log(chance.name());
         e.preventDefault();
       });
+
+      $('#nutha').click(function(e){
+        socket.emit('balls');
+        console.log("nutha got clicked!");
+        e.preventDefault();
+      });
+
     });
   </script>
 </head>
 <body>
   <button id="button" href="#">LED ON/OFF</button>
+
+<button id="nutha" href="#">not led</button>
 </body>
 </html>

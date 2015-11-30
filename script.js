@@ -3,7 +3,7 @@ var app = require('http').createServer(handler),
      fs = require('fs'),
    five = require('johnny-five');
 
-app.listen(8090);
+app.listen(8080);
 
 function handler (req, res) {
   fs.readFile(__dirname + '/index.html',
@@ -23,7 +23,7 @@ board = new five.Board();
 board.on("ready", function() {
   led = new five.Led(13);
 
-  io.on('connection', function (socket) {
+  io.sockets.on('connection', function (socket) {
     socket.on('click', function () {
       led.toggle();
     });
