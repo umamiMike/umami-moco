@@ -22,7 +22,8 @@ Microcontroller  - [teensy 3.1 ](https://www.pjrc.com/store/teensy31.html)
   * [hookup tutorial](https://learn.sparkfun.com/tutorials/easy-driver-hook-up-guide)  
 stepper motor  
 Raspberry Pi B (will get more info here)  
-[i2c motor driver pca9685 documentation](https://github.com/rwaldron/johnny-five/blob/master/docs/servo-PCA9685.md)
+[i2c motor driver pca9685 documentation](https://github.com/rwaldron/johnny-five/blob/master/docs/servo-PCA9685.md)  
+* https://learn.adafruit.com/16-channel-pwm-servo-driver/hooking-it-up
 
 ## Software  
 * [Raspberry Pi Raspibian "Jessie"](https://www.raspberrypi.org/downloads/raspbian/)  

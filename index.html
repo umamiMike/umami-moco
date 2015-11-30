@@ -4,12 +4,12 @@
   <script src="/socket.io/socket.io.js"></script>
   <script>
     $(document).ready(function() {
-      var socket = io.connect('http://localhost');
+      var socket = io.connect('http://10.0.0.199:8090');
       $('#button').click(function(e){
         socket.emit('click');
         e.preventDefault();
       });
-    });  
+    });
   </script>
 </head>
 <body>
