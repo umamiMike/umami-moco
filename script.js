@@ -1,4 +1,5 @@
 var express = require('express'),
+    os = require('os');
     app = express();
     server = require('http').createServer(app),
      io = require('socket.io')(server),
@@ -16,32 +17,28 @@ server.listen(port, function () {
 app.get('/',function(req,res){
     res.sendFile(__dirname + '/index.html');
 
-    // function (err, data) {
-    //   if (err) {
-    //     res.writeHead(500);
-    //     return res.end('Error loading index.html');
-    //   }
-    //
-    //   res.writeHead(200);
-    //   res.end(data);
-    //};
+});
+//still need to understand how the express route works
+app.get('/led-on',function(req,res){
+    // var socket = io.connect('http://10.0.0.199:3000');
+    // socket.emit('click');
+res.send('you are at led-on');
+app.locals.led.toggle();
 });
 
+board = new five.Board();
 
+board.on("ready", function() {
+  led = new five.Led(13);
 
-//board = new five.Board();
+  io.on('connection', function (socket) {
 
-// board.on("ready", function() {
-//   led = new five.Led(13);
-//
-//   io.on('connection', function (socket) {
-//
-//     socket.on('click', function () {
-//       led.toggle();
-//     });
-//
-//     socket.on('balls', function (){
-//
-//     });
-//   });
-// });
+    socket.on('click', function () {
+      led.toggle();
+    });
+
+    socket.on('balls', function (){
+
+    });
+  });
+});
