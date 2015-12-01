@@ -5,10 +5,10 @@ var express = require('express'),
      io = require('socket.io')(server),
      fs = require('fs'),
    five = require('johnny-five'),
-   port = process.env.PORT || 3000;
+   port = process.env.PORT || 8000;
 
 //app.listen(8090);
-
+//os.networkInterfaces().wlan0[0].address
 server.listen(port, function () {
   console.log('Server listening at port %d', port);
 });
@@ -23,7 +23,7 @@ app.get('/led-on',function(req,res){
     // var socket = io.connect('http://10.0.0.199:3000');
     // socket.emit('click');
 res.send('you are at led-on');
-app.locals.led.toggle();
+//app.locals.led.toggle();
 });
 
 board = new five.Board();
