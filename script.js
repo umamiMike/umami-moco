@@ -22,10 +22,9 @@ app.get('/',function(req,res){
 });
 //still need to understand how the express route works
 app.get('/led-on',function(req,res){
-    // var socket = io.connect('http://10.0.0.199:3000');
-    // socket.emit('click');
+
 res.send('you are at led-on');
-//app.locals.led.toggle();
+
 });
 
 board = new five.Board();
