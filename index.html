@@ -2,21 +2,39 @@
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script  src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
-<style media="screen">
 
+<style media="screen">
+.container{
+
+        height:400px;
+}
+.slider1 {
+
+    float:left;
+    margin-left:20px;
+    padding-right:-8px;
+}
+
+#nutha{
+    display:bock;
+    width:115px;
+}
 </style>
   <script src="/socket.io/socket.io.js"></script>
+  <script src="/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/trontastic/jquery-ui.css">
     <!-- <script src="/chance/chance.js"></script> -->
   <script>
 
     $(document).ready(function() {
         var socket = io.connect('http://10.0.0.199:8000');
-        $("#slider").slider({
+        $(".slider1").slider({
+            orientation: "vertical",
             animate: "slow",
             change: function(event,ui){
-                console.log(ui.value);
-            }
+                console.log($(this).data('slid')+":" + ui.value);
+            },
+            max: 400
 
 
     });
@@ -38,8 +56,14 @@
 <body>
   <button id="button" href="#">LED ON/OFF</button>
 
-<button id="nutha" href="#">not led</button>
+<button id="nutha" href="#">random brightness</button>
 
-<div id="slider"></div>
+<div class="container">
+    <div class="slider1" data-slid="a"></div>
+    <div class="slider1" data-slid="b"></div>
+    <div class="slider1" data-slid="c"></div>
+    <div class="slider1" data-slid="d"></div>
+
+</div>
 </body>
 </html>
