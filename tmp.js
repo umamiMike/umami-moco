@@ -3,7 +3,7 @@ var express = require('express'),
     app = express(),
     fs = require('fs'),
     server = require('http').createServer(app),
-    io = require('socket.io')(server),
+    io = require('socket.io')(server)
     //five = require('johnny-five');
     //port = process.env.PORT || 8000;
 

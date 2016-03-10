@@ -5,7 +5,7 @@ var express = require('express'),
     server = require('http').createServer(app),
     io = require('socket.io')(server),
     five = require('johnny-five');
-    //port = process.env.PORT || 8000;
+    port = process.env.PORT || 7500;
 
 server.listen(port, function () {
   console.log('Server listening at port %d', port);
@@ -25,10 +25,10 @@ res.send('you are at led-on');
 });
 app.get('/green',function(req,res){
 
-res.send('you are at green');
-redled.brightness(0);
-blueled.brightness(0);
-greenled.brightness(255);
+    res.send('you are at green');
+    redled.brightness(0);
+    blueled.brightness(0);
+    greenled.brightness(255);
 
 });
 app.get('/blink',function(req,res){
