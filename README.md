@@ -2,10 +2,6 @@
 
 ## Description
 #### A  Camera slider with a servo controlled gimbal controlled in real time via a web interface.
----
-
-## Author  - _Mike Chastain_
-
 
 ## Install
   Not alot to do here yet other than cloning into a folder and

@@ -4,7 +4,7 @@ var express = require('express'),
     fs = require('fs'),
     server = require('http').createServer(app),
     io = require('socket.io')(server),
-    five = require('johnny-five');
+    //five = require('johnny-five');
     //port = process.env.PORT || 8000;
 
 server.listen(port, function () {
@@ -26,44 +26,23 @@ res.send('you are at led-on');
 app.get('/green',function(req,res){
 
 res.send('you are at green');
-redled.brightness(0);
-blueled.brightness(0);
-greenled.brightness(255);
+
 
 });
 app.get('/blink',function(req,res){
 
 res.send('you are at green');
-redled.blink();
-blueled.blink();
-greenled.blink();
+
 
 });
 
 app.get('/strobe',function(req,res){
 
 res.send('you are at green');
-redled.strobe(400);
-blueled.strobe(500);
-greenled.strobe(600);
+
 
 });
 
-board = new five.Board();
-
-board.on("ready", function() {
-  led = new five.Led(11);
-redled = new five.Led(5);
-greenled = new five.Led(6);
-blueled = new five.Led(9);
-
-  // rgbLed = new five.Led.RGB({
-  //   pins: {
-  //     red: 6,
-  //     green: 5,
-  //     blue: 3
-  //   }
-  // });
 
   io.on('connection', function (socket) {
 var amt = 1000;
@@ -96,7 +75,6 @@ var amt = 1000;
       redled.brightness(data);
     });
   });
-});
 
 function getRandom(min, max) {
   return Math.random() * (max - min) + min;
