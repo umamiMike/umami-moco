@@ -9,8 +9,8 @@ void setup()
 {
   Serial.begin(BAUD);
  // pinMode(5,OUTPUT); // Enable
-  pinMode(pin_Step,OUTPUT); // Step
-  pinMode(pin_Dir,OUTPUT); // Dir
+  //pinMode(pin_Step,OUTPUT); // Step
+ // pinMode(pin_Dir,OUTPUT); // Dir
   //digitalWrite(5,LOW); // Set Enable low
 }
 
