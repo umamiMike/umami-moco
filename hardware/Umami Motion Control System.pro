@@ -1,4 +1,4 @@
-update=11/21/2015 3:24:58 PM
+update=4/7/2016 10:46:09 AM
 version=1
 last_client=kicad
 [cvpcb]
@@ -83,3 +83,13 @@ LibName31=contrib
 LibName32=valves
 LibName33=d:/Users/Mike/Dropbox/Scripting/CircuitDesign/Kicad/FromLecture/lecture-cache
 LibName34=Conn-raspberry
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
