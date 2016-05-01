@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Voltage Reg Circuits-cache
 LIBS:Umami Motion Control System-rescue
 LIBS:power
 LIBS:device
@@ -30,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:lecture-cache
 LIBS:Conn-raspberry
 LIBS:Umami Motion Control System-cache
 EELAYER 25 0
